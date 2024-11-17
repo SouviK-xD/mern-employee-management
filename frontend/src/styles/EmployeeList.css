@@ -1,0 +1,169 @@
+/* Container for the employee list */
+.employee-list-container {
+    padding: 20px;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(90deg, #5D54A4, #7C78B8); /* Purple gradient */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header with title and link to create employee */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: linear-gradient(90deg, #5D54A4, #7C78B8);  
+    border-radius: 5px;
+}
+
+.header h2 {
+    font-size: 28px;
+    color: #fff;
+}
+
+.create-employee-link {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.create-employee-link:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the search bar and total employee count */
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+.total-count {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Glassmorphism Style for Table - Whitish Transparent */
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.15); /* Whitish transparent background */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border-radius: 15px; /* Rounded corners for the table */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle, transparent border */
+}
+
+/* Table Headers */
+.employee-table th,
+.employee-table td {
+    padding: 12px 15px;
+    text-align: left;
+    color: #f4f4f4; /* Light color text */
+}
+
+/* Table Headers with darker background */
+.employee-table th {
+    background-color: rgba(0, 0, 0, 0.3); /* Slightly darker header */
+    color: #f4f4f4;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer; /* Makes table headers clickable for sorting */
+    transition: background 0.3s ease;
+}
+
+.employee-table th:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Darker on hover */
+}
+
+/* Table Rows */
+.employee-table tr {
+    transition: background 0.3s ease;
+}
+
+.employee-table tr:hover {
+    background: rgba(255, 255, 255, 0.1); /* Light hover effect on rows */
+}
+
+/* Styling for the employee image */
+.employee-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Button for actions (Edit/Delete) */
+.action-button,
+.delete-button {
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.action-button {
+    background-color: #224365; /* Dark blue background */
+    color: white;
+    border: none;
+}
+
+.delete-button {
+    background-color: #ff0000; /* Red background */
+    color: white;
+    border: none;
+}
+
+.action-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.delete-button:hover {
+    background-color: #890404; /* Darker red on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* Pagination controls */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.pagination button.active {
+    background-color: #007BFF;
+    color: white;
+}
+
+.pagination button:hover {
+    background-color: #ddd;
+    transform: scale(1.05); /* Hover effect to slightly enlarge the button */
+}
