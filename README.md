@@ -32,15 +32,15 @@ Create two .env files in the respective directories as shown below:
 
 Backend (.env)
 
-MONGO_URI = mongodb+srv://souvik1147:cosmic-byte32@cluster0.vda19fk.mongodb.net/employeeDB?retryWrites=true&w=majority&appName=Cluster0
-PORT=5000
+MONGO_URI = mongodb+srv://souvik1147:cosmic-byte32@cluster0.vda19fk.mongodb.net/employeeDB?retryWrites=true&w=majority&appName=Cluster0                   
+PORT=5000                                  
 JWT_SECRET=secretkey
 
 Frontend (.env)
 
-REACT_APP_API_URL=http://localhost:5000/api
-REACT_APP_IMG_API_URL=http://localhost:5000
-REACT_APP_AUTH=http://localhost:5000/api/auth
+REACT_APP_API_URL=http://localhost:5000/api                     
+REACT_APP_IMG_API_URL=http://localhost:5000               
+REACT_APP_AUTH=http://localhost:5000/api/auth            
 
 
 Running the Project Locally 🏃‍♂️
