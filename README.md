@@ -31,11 +31,13 @@ Environment Variables 🌍
 Create two .env files in the respective directories as shown below:
 
 Backend (.env)
+
 MONGO_URI = mongodb+srv://souvik1147:cosmic-byte32@cluster0.vda19fk.mongodb.net/employeeDB?retryWrites=true&w=majority&appName=Cluster0
 PORT=5000
 JWT_SECRET=secretkey
 
 Frontend (.env)
+
 REACT_APP_API_URL=http://localhost:5000/api
 REACT_APP_IMG_API_URL=http://localhost:5000
 REACT_APP_AUTH=http://localhost:5000/api/auth
@@ -61,8 +63,9 @@ Open your web browser and navigate to http://localhost:3000 to view the Employee
 Login Credentials 🔑
 
 To log in to the application, use the following credentials:
-Username: souvik
-Password: admin
+
+Username: souvik   
+Password: admin     
 
 Usage 📖
 Once both servers are running, you can use the application to perform various operations such as adding new employees, viewing employee details, updating records, and deleting employees.
